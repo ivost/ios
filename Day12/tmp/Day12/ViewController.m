@@ -15,6 +15,9 @@
 
 @implementation ViewController
 
+NSArray *fetchedObjects;
+NSManagedObject *selectedObject;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib
@@ -31,6 +34,16 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+-(void)displayManagedObject:(NSManagedObject *)obj {
+    self.Name.text = [obj valueForKey:@"name"];
+    self.Email.text = [obj valueForKey:@"email"];
+    //self.txtNumber.text = [(NSNumber *)[obj valueForKey:@"number"] stringValue];
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+//    self.Created.text = [dateFormatter stringFromDate:[obj valueForKey:@"created"]];
+//    self.Updated.text = [dateFormatter stringFromDate:[obj valueForKey:@"updated"]];
 }
 
 - (IBAction)onCreate:(id)sender {
@@ -58,5 +71,24 @@
 }
 
 - (IBAction)onLoad:(id)sender {
+    AppDelegate * delegate = [UIApplication sharedApplication].delegate;
+    NSManagedObjectContext * context = [delegate managedObjectContext];
+    NSFetchRequest * req = [[NSFetchRequest alloc] init];
+    NSEntityDescription * ent = [NSEntityDescription entityForName:@"DataRecord" inManagedObjectContext: context];
+    [req setEntity:ent];
+    NSError * error;
+    fetchedObjects = [context executeFetchRequest:req error:&error];
+    if (error) {
+        NSLog(@"Error:%@", error);
+        return;
+    }
+    if ([fetchedObjects count] > 0) {
+        for (NSManagedObject * obj in fetchedObjects) {
+            NSLog(@"Name: %@", [obj valueForKey:@"name"]);
+        }
+        NSManagedObject *obj = [fetchedObjects objectAtIndex:0];
+        [self displayManagedObject:obj];
+        selectedObject = obj;
+    }
 }
 @end

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B022AB5819E4C866007E71C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B022AB5719E4C866007E71C3 /* main.m */; };
 		B022AB5B19E4C866007E71C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B022AB5A19E4C866007E71C3 /* AppDelegate.m */; };
-		B022AB5E19E4C866007E71C3 /* Day12.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B022AB5C19E4C866007E71C3 /* Day12.xcdatamodeld */; };
 		B022AB6119E4C866007E71C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B022AB6019E4C866007E71C3 /* ViewController.m */; };
 		B022AB6419E4C866007E71C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B022AB6219E4C866007E71C3 /* Main.storyboard */; };
 		B022AB6619E4C866007E71C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B022AB6519E4C866007E71C3 /* Images.xcassets */; };
@@ -34,7 +33,6 @@
 		B022AB5719E4C866007E71C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B022AB5919E4C866007E71C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B022AB5A19E4C866007E71C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B022AB5D19E4C866007E71C3 /* Day12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Day12.xcdatamodel; sourceTree = "<group>"; };
 		B022AB5F19E4C866007E71C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B022AB6019E4C866007E71C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B022AB6319E4C866007E71C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 		B022AB4919E4C866007E71C3 = {
 			isa = PBXGroup;
 			children = (
-				B064B73F19E4CCBA000D5E8A /* MyModel.xcdatamodeld */,
 				B022AB5419E4C866007E71C3 /* Day12 */,
 				B022AB7119E4C866007E71C3 /* Day12Tests */,
 				B022AB5319E4C866007E71C3 /* Products */,
@@ -86,6 +83,7 @@
 		B022AB5419E4C866007E71C3 /* Day12 */ = {
 			isa = PBXGroup;
 			children = (
+				B064B73F19E4CCBA000D5E8A /* MyModel.xcdatamodeld */,
 				B022AB5919E4C866007E71C3 /* AppDelegate.h */,
 				B022AB5A19E4C866007E71C3 /* AppDelegate.m */,
 				B022AB5F19E4C866007E71C3 /* ViewController.h */,
@@ -93,7 +91,6 @@
 				B022AB6219E4C866007E71C3 /* Main.storyboard */,
 				B022AB6519E4C866007E71C3 /* Images.xcassets */,
 				B022AB6719E4C866007E71C3 /* LaunchScreen.xib */,
-				B022AB5C19E4C866007E71C3 /* Day12.xcdatamodeld */,
 				B022AB5519E4C866007E71C3 /* Supporting Files */,
 			);
 			path = Day12;
@@ -226,7 +223,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B022AB5B19E4C866007E71C3 /* AppDelegate.m in Sources */,
-				B022AB5E19E4C866007E71C3 /* Day12.xcdatamodeld in Sources */,
 				B022AB6119E4C866007E71C3 /* ViewController.m in Sources */,
 				B064B74119E4CCBA000D5E8A /* MyModel.xcdatamodeld in Sources */,
 				B022AB5819E4C866007E71C3 /* main.m in Sources */,
@@ -436,23 +432,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B022AB5C19E4C866007E71C3 /* Day12.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B022AB5D19E4C866007E71C3 /* Day12.xcdatamodel */,
-			);
-			currentVersion = B022AB5D19E4C866007E71C3 /* Day12.xcdatamodel */;
-			path = Day12.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		B064B73F19E4CCBA000D5E8A /* MyModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				B064B74019E4CCBA000D5E8A /* MyModel.xcdatamodel */,
 			);
 			currentVersion = B064B74019E4CCBA000D5E8A /* MyModel.xcdatamodel */;
-			path = MyModel.xcdatamodeld;
+			name = MyModel.xcdatamodeld;
+			path = ../MyModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
