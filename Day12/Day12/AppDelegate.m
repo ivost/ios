@@ -44,6 +44,13 @@
     [self saveContext];
 }
 
+
+/*
+ READ THIS
+ http://commandshift.co.uk/blog/2013/09/07/the-core-data-stack/
+ */
+
+
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;

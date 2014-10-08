@@ -15,6 +15,7 @@
 		B022AB6619E4C866007E71C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B022AB6519E4C866007E71C3 /* Images.xcassets */; };
 		B022AB6919E4C866007E71C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B022AB6719E4C866007E71C3 /* LaunchScreen.xib */; };
 		B022AB7519E4C866007E71C3 /* Day12Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B022AB7419E4C866007E71C3 /* Day12Tests.m */; };
+		B064B74119E4CCBA000D5E8A /* MyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B064B73F19E4CCBA000D5E8A /* MyModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B022AB6E19E4C866007E71C3 /* Day12Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day12Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B022AB7319E4C866007E71C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B022AB7419E4C866007E71C3 /* Day12Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day12Tests.m; sourceTree = "<group>"; };
+		B064B74019E4CCBA000D5E8A /* MyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		B022AB4919E4C866007E71C3 = {
 			isa = PBXGroup;
 			children = (
+				B064B73F19E4CCBA000D5E8A /* MyModel.xcdatamodeld */,
 				B022AB5419E4C866007E71C3 /* Day12 */,
 				B022AB7119E4C866007E71C3 /* Day12Tests */,
 				B022AB5319E4C866007E71C3 /* Products */,
@@ -225,6 +228,7 @@
 				B022AB5B19E4C866007E71C3 /* AppDelegate.m in Sources */,
 				B022AB5E19E4C866007E71C3 /* Day12.xcdatamodeld in Sources */,
 				B022AB6119E4C866007E71C3 /* ViewController.m in Sources */,
+				B064B74119E4CCBA000D5E8A /* MyModel.xcdatamodeld in Sources */,
 				B022AB5819E4C866007E71C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				B022AB7A19E4C866007E71C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B022AB7B19E4C866007E71C3 /* Build configuration list for PBXNativeTarget "Day12Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				B022AB7D19E4C866007E71C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -437,6 +443,16 @@
 			);
 			currentVersion = B022AB5D19E4C866007E71C3 /* Day12.xcdatamodel */;
 			path = Day12.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B064B73F19E4CCBA000D5E8A /* MyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B064B74019E4CCBA000D5E8A /* MyModel.xcdatamodel */,
+			);
+			currentVersion = B064B74019E4CCBA000D5E8A /* MyModel.xcdatamodel */;
+			path = MyModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

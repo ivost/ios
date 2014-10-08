@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
+//@property (strong, nonatomic) NSManagedObjectContext * context;
+
+@property (weak, nonatomic) IBOutlet UITextField *Name;
+@property (weak, nonatomic) IBOutlet UITextField *Email;
+
+- (IBAction)onCreate:(id)sender;
+- (IBAction)onUpdate:(id)sender;
+- (IBAction)onLoad:(id)sender;
 
 @end
 
