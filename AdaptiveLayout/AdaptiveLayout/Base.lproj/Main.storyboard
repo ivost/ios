@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJH-jE-8Zh" userLabel="TextContainer">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGA-3K-WSY">
+                                        <rect key="frame" x="249" y="10" width="102.5" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPC-F3-qTN">
+                                        <rect key="frame" x="277.5" y="323.5" width="45.5" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="HGA-3K-WSY" secondAttribute="centerX" id="Kqb-7P-r7U"/>
+                                    <constraint firstAttribute="centerX" secondItem="mPC-F3-qTN" secondAttribute="centerX" id="NsL-cT-B8S"/>
+                                    <constraint firstItem="HGA-3K-WSY" firstAttribute="top" secondItem="zJH-jE-8Zh" secondAttribute="top" constant="10" id="YK3-Pq-SZ7"/>
+                                    <constraint firstItem="mPC-F3-qTN" firstAttribute="top" secondItem="HGA-3K-WSY" secondAttribute="bottom" constant="284" id="bjl-ft-ZD7"/>
+                                    <constraint firstAttribute="centerX" secondItem="mPC-F3-qTN" secondAttribute="centerX" id="cFP-oK-ruH"/>
+                                    <constraint firstAttribute="bottom" secondItem="mPC-F3-qTN" secondAttribute="bottom" constant="10" id="sfJ-Ss-SEu"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bjl-ft-ZD7"/>
+                                        <exclude reference="cFP-oK-ruH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="rZm-o0-mcP">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zJH-jE-8Zh" secondAttribute="trailing" id="248-9p-FdV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zJH-jE-8Zh" secondAttribute="bottom" id="8ch-vJ-v83"/>
+                            <constraint firstItem="rZm-o0-mcP" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="K2W-NI-tfY"/>
+                            <constraint firstAttribute="centerX" secondItem="rZm-o0-mcP" secondAttribute="centerX" id="Ub4-Um-9BS"/>
+                            <constraint firstItem="rZm-o0-mcP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Uft-Zu-imq"/>
+                            <constraint firstItem="zJH-jE-8Zh" firstAttribute="top" secondItem="rZm-o0-mcP" secondAttribute="bottom" constant="20" id="aGr-Bb-I2b"/>
+                            <constraint firstItem="zJH-jE-8Zh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ssw-nG-gaw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="197"/>
+    </resources>
+</document>
