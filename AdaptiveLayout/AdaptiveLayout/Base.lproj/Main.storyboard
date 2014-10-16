@@ -27,8 +27,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPC-F3-qTN">
-                                        <rect key="frame" x="277.5" y="323.5" width="45.5" height="29.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <rect key="frame" x="268" y="312" width="64.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -38,15 +38,10 @@
                                     <constraint firstAttribute="centerX" secondItem="HGA-3K-WSY" secondAttribute="centerX" id="Kqb-7P-r7U"/>
                                     <constraint firstAttribute="centerX" secondItem="mPC-F3-qTN" secondAttribute="centerX" id="NsL-cT-B8S"/>
                                     <constraint firstItem="HGA-3K-WSY" firstAttribute="top" secondItem="zJH-jE-8Zh" secondAttribute="top" constant="10" id="YK3-Pq-SZ7"/>
-                                    <constraint firstItem="mPC-F3-qTN" firstAttribute="top" secondItem="HGA-3K-WSY" secondAttribute="bottom" constant="284" id="bjl-ft-ZD7"/>
-                                    <constraint firstAttribute="centerX" secondItem="mPC-F3-qTN" secondAttribute="centerX" id="cFP-oK-ruH"/>
                                     <constraint firstAttribute="bottom" secondItem="mPC-F3-qTN" secondAttribute="bottom" constant="10" id="sfJ-Ss-SEu"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="bjl-ft-ZD7"/>
-                                        <exclude reference="cFP-oK-ruH"/>
-                                    </mask>
+                                <variation key="heightClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="400" width="600" height="0.0"/>
                                 </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="rZm-o0-mcP">
@@ -55,14 +50,38 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rZm-o0-mcP" secondAttribute="centerX" id="18x-Z4-fGE"/>
                             <constraint firstAttribute="trailing" secondItem="zJH-jE-8Zh" secondAttribute="trailing" id="248-9p-FdV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zJH-jE-8Zh" secondAttribute="bottom" id="8ch-vJ-v83"/>
+                            <constraint firstAttribute="centerY" secondItem="rZm-o0-mcP" secondAttribute="centerY" constant="101.5" id="Go9-ct-10W"/>
                             <constraint firstItem="rZm-o0-mcP" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="K2W-NI-tfY"/>
                             <constraint firstAttribute="centerX" secondItem="rZm-o0-mcP" secondAttribute="centerX" id="Ub4-Um-9BS"/>
                             <constraint firstItem="rZm-o0-mcP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Uft-Zu-imq"/>
                             <constraint firstItem="zJH-jE-8Zh" firstAttribute="top" secondItem="rZm-o0-mcP" secondAttribute="bottom" constant="20" id="aGr-Bb-I2b"/>
+                            <constraint firstItem="rZm-o0-mcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="jwK-br-gbL"/>
+                            <constraint firstItem="rZm-o0-mcP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="oUk-xd-I1o"/>
                             <constraint firstItem="zJH-jE-8Zh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ssw-nG-gaw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="18x-Z4-fGE"/>
+                                <exclude reference="Go9-ct-10W"/>
+                                <exclude reference="jwK-br-gbL"/>
+                                <exclude reference="oUk-xd-I1o"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="18x-Z4-fGE"/>
+                                <include reference="Go9-ct-10W"/>
+                                <exclude reference="K2W-NI-tfY"/>
+                                <exclude reference="Ub4-Um-9BS"/>
+                                <exclude reference="Uft-Zu-imq"/>
+                                <include reference="jwK-br-gbL"/>
+                                <include reference="oUk-xd-I1o"/>
+                                <exclude reference="aGr-Bb-I2b"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,6 +89,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cloud" width="300" height="197"/>
+        <image name="cloud" width="500" height="322"/>
     </resources>
 </document>
