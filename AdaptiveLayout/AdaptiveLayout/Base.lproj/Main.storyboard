@@ -89,6 +89,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cloud" width="500" height="322"/>
+        <image name="cloud" width="300" height="197"/>
     </resources>
 </document>
