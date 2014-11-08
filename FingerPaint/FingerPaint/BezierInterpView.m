@@ -43,10 +43,6 @@
     return self;
 }
 
--(void)doSingleTap:(UITapGestureRecognizer *)tapGestureRecognizer{
-    //NSLog(@"single tap");
-}
-
 // clear on double tap
 -(void)doDoubleTap:(UITapGestureRecognizer *)tapGestureRecognizer{
     //NSLog(@"Clear image");
