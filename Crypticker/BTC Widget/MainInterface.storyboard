@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="BTC_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNR-de-yTF">
+                                <rect key="frame" x="260" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="ziD-hX-90f"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" image="caret-notification-center">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleLineChart:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hgk-Xw-wPm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+14.05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-F6-vX1" userLabel="PriceDiff">
+                                <rect key="frame" x="198" y="0.0" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="SVU-qX-m9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0054174270072992704" green="0.96430200729927007" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ek-7R-Dgy" userLabel="LineChartView" customClass="JBLineChartView">
+                                <rect key="frame" x="0.0" y="52" width="320" height="98"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="EfL-9l-YXk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="562.12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFq-eR-LgJ" userLabel="CrntPrice">
+                                <rect key="frame" x="21" y="0.0" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5t2-nC-dJG"/>
+                                    <constraint firstAttribute="width" constant="53" id="onl-8V-LaG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CmZ-F6-vX1" firstAttribute="baseline" secondItem="fFq-eR-LgJ" secondAttribute="baseline" id="3lm-4E-zdJ"/>
+                            <constraint firstItem="CmZ-F6-vX1" firstAttribute="firstBaseline" secondItem="fFq-eR-LgJ" secondAttribute="firstBaseline" id="IEo-6T-SED"/>
+                            <constraint firstItem="fNR-de-yTF" firstAttribute="top" secondItem="CmZ-F6-vX1" secondAttribute="top" id="J6s-Jf-nrb"/>
+                            <constraint firstItem="5Ek-7R-Dgy" firstAttribute="top" secondItem="fNR-de-yTF" secondAttribute="bottom" constant="8" id="Ruo-Bi-j5G"/>
+                            <constraint firstItem="5Ek-7R-Dgy" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="Tdu-L8-Ou6"/>
+                            <constraint firstItem="fNR-de-yTF" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="aRD-7q-Awg"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ek-7R-Dgy" secondAttribute="trailing" id="aZv-H1-eZr"/>
+                            <constraint firstItem="fNR-de-yTF" firstAttribute="leading" secondItem="CmZ-F6-vX1" secondAttribute="trailing" constant="8" symbolic="YES" id="kno-aW-kmy"/>
+                            <constraint firstItem="CmZ-F6-vX1" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="lMd-mY-aVg"/>
+                            <constraint firstItem="fFq-eR-LgJ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="5" id="oDZ-Sb-IUU"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="5Ek-7R-Dgy" secondAttribute="bottom" id="zDM-mV-uFa"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="lineChartHeightConstraint" destination="EfL-9l-YXk" id="dPs-vR-s4A"/>
+                        <outlet property="lineChartView" destination="5Ek-7R-Dgy" id="fyX-hK-OpG"/>
+                        <outlet property="priceChangeLabel" destination="CmZ-F6-vX1" id="LNM-tF-bX6"/>
+                        <outlet property="priceLabel" destination="fFq-eR-LgJ" id="jaK-hl-IXf"/>
+                        <outlet property="toggleLineChartButton" destination="fNR-de-yTF" id="uKh-qC-Kg5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="caret-notification-center" width="14" height="9"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
