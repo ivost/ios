@@ -28,6 +28,8 @@
 		B06A267A1A19356F000E85E5 /* zmq_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B06A26781A19356F000E85E5 /* zmq_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B06A267B1A19356F000E85E5 /* zmq.h in Headers */ = {isa = PBXBuildFile; fileRef = B06A26791A19356F000E85E5 /* zmq.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B06A267D1A1935DB000E85E5 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A267C1A1935DB000E85E5 /* libstdc++.dylib */; };
+		B06A267F1A195DF8000E85E5 /* EventClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A267E1A195DF8000E85E5 /* EventClient.m */; };
+		B06A26811A195F4C000E85E5 /* EventClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B06A26801A195E43000E85E5 /* EventClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		B06A26781A19356F000E85E5 /* zmq_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq_utils.h; sourceTree = "<group>"; };
 		B06A26791A19356F000E85E5 /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
 		B06A267C1A1935DB000E85E5 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		B06A267E1A195DF8000E85E5 /* EventClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventClient.m; sourceTree = "<group>"; };
+		B06A26801A195E43000E85E5 /* EventClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		B06A26471A1934A5000E85E5 /* ZMQiOS */ = {
 			isa = PBXGroup;
 			children = (
+				B06A26801A195E43000E85E5 /* EventClient.h */,
+				B06A267E1A195DF8000E85E5 /* EventClient.m */,
 				B06A26781A19356F000E85E5 /* zmq_utils.h */,
 				B06A26791A19356F000E85E5 /* zmq.h */,
 				B06A26661A193535000E85E5 /* ZMQSocket.m */,
@@ -182,6 +188,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06A26811A195F4C000E85E5 /* EventClient.h in Headers */,
 				B06A266F1A193535000E85E5 /* ZMQSocket.h in Headers */,
 				B06A267B1A19356F000E85E5 /* zmq.h in Headers */,
 				B06A264B1A1934A5000E85E5 /* ZMQiOS.h in Headers */,
@@ -304,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06A266E1A193535000E85E5 /* ZMQContext.m in Sources */,
+				B06A267F1A195DF8000E85E5 /* EventClient.m in Sources */,
 				B06A266D1A193535000E85E5 /* ZMQSocket.m in Sources */,
 				B06A26721A193535000E85E5 /* ZMQException.m in Sources */,
 			);
@@ -515,6 +523,7 @@
 				B06A26601A1934A5000E85E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

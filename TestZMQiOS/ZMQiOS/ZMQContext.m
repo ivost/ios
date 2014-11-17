@@ -26,7 +26,7 @@
 	self = [super init];
 	if (!self) return nil;
 
-	context = zmq_init(threadCount);
+	context = zmq_init((int) threadCount);
 	if (!context) {
 		NSLog(@"%s: *** Error creating ZMQContext: zmq_init: %s",
 		      __func__, zmq_strerror(zmq_errno()));

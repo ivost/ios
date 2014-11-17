@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char ZMQiOSVersionString[];
 
 
 #import <ZMQiOS/ZMQObjC.h>
+#import <ZMQiOS/EventClient.h>
