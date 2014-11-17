@@ -30,8 +30,7 @@
 }
 
 
-//- (void)someMethodWithFirstValue:(SomeType)info1 secondValue:(AnotherType)info2;
-- (void) sendEventWithId: (int) eventId data: (NSString *) messageData {
+- (void) sendEventWithId: (int) eventId data: (NSData *) messageData {
     NSLog(@"sendEvent %d", eventId);
     // send event id as hex string
     char evtid[10];
@@ -48,8 +47,7 @@
     //NSLog(@"Send %@", dsender);
 
     // payload
-    NSData *msg = [messageData dataUsingEncoding:NSUTF8StringEncoding];
-    [sock sendData: msg withFlags: 0];
+    [sock sendData: messageData withFlags: 0];
     //NSLog(@"Send %@", msg);
     
 }

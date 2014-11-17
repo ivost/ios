@@ -11,7 +11,7 @@
 #import <S1Msg/EventClient.h>
 
 @interface ViewController ()
-- (void) sendUserInputWithJson: (NSString *) json;
+- (void) sendUserInputWithJson: (NSData *) json;
 @end
 
 @implementation ViewController
@@ -19,9 +19,8 @@
 EventClient * eventProxy;
 CGPoint prevVelocity;
 
-- (void) sendUserInputWithJson: (NSString *) json {
+- (void) sendUserInputWithJson: (NSData *) json {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
         [eventProxy sendEventWithId:909 data:json];
     });
 }
@@ -57,8 +56,19 @@ CGPoint prevVelocity;
 -(void)handleSwipe:(UISwipeGestureRecognizer *)recognizer {
     int touches = (int) recognizer.numberOfTouches;
     NSLog(@"swipe: %d finger(s)", touches);
-    [self sendUserInputWithJson: @"{\"type\": \"swipe\"}"];
+/*
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"type"] = @"Swipe";
+    [dict setObject: [NSNumber numberWithInteger: recognizer.numberOfTouches] forKey:@"count" ];
     
+    NSError *error;
+    NSData *json = [NSJSONSerialization dataWithJSONObject: dict
+                                            options: 0
+                                            error: &error];
+    
+    [self sendUserInputWithJson: json];
+ */
+ //[self sendUserInputWithJson: @"{\"type\": \"swipe\"}"];
 }
 
 -(void)handlePan:(UIPanGestureRecognizer *)recognizer {
@@ -67,7 +77,21 @@ CGPoint prevVelocity;
     NSLog(@"pan: %ld, vel: %f %f, num: %d",
           recognizer.state, velocity.x, velocity.y, (int) recognizer.numberOfTouches);
 
-    [self sendUserInputWithJson: @"{\"type\": \"pan\"}"];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"type"] = @"Pan";
+    //[dict setObject: [NSNumber numberWithInteger: recognizer.numberOfTouches] forKey:@"count" ];
+    dict[@"count"] = [NSNumber numberWithInteger: recognizer.numberOfTouches];
+    
+    NSError *error;
+    NSData *json = [NSJSONSerialization dataWithJSONObject: dict
+                                                   options: 0
+                                                     error: &error];
+    
+//    NSString *s = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
+//    NSLog(@"json: %@", s);
+    
+    [self sendUserInputWithJson: json];
+    //[self sendUserInputWithJson: @"{\"type\": \"pan\"}"];
 
     float dotProd = velocity.x * prevVelocity.x + velocity.y * prevVelocity.y;
     if (dotProd < 0) {

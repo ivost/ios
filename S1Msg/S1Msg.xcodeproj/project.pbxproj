@@ -24,6 +24,7 @@
 		B096019B1A198D060022D79C /* ZMQSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B096018F1A198D060022D79C /* ZMQSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B096019C1A198D060022D79C /* ZMQSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B09601901A198D060022D79C /* ZMQSocket.m */; };
 		B096019E1A198D830022D79C /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B096019D1A198D830022D79C /* libstdc++.dylib */; };
+		B09601A81A19A0150022D79C /* S1Msg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B09601651A198C780022D79C /* S1Msg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,19 @@
 			remoteInfo = S1Msg;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B09601A71A19A0050022D79C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Users/ivostoy/Documents/iOS-root/ios";
+			dstSubfolderSpec = 0;
+			files = (
+				B09601A81A19A0150022D79C /* S1Msg.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B09601651A198C780022D79C /* S1Msg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = S1Msg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +190,7 @@
 				B09601611A198C780022D79C /* Frameworks */,
 				B09601621A198C780022D79C /* Headers */,
 				B09601631A198C780022D79C /* Resources */,
+				B09601A71A19A0050022D79C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -458,6 +473,7 @@
 				B096017D1A198C790022D79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B096017E1A198C790022D79C /* Build configuration list for PBXNativeTarget "S1MsgTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +482,7 @@
 				B09601801A198C790022D79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

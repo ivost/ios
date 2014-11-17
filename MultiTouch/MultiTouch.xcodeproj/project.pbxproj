@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B09601A41A1991DB0022D79C /* S1Msg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09601A31A1991DB0022D79C /* S1Msg.framework */; };
-		B09601A61A1994870022D79C /* S1Msg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B09601A31A1991DB0022D79C /* S1Msg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B09601AA1A19A19A0022D79C /* S1Msg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09601A91A19A19A0022D79C /* S1Msg.framework */; };
+		B09601AB1A19A4A40022D79C /* S1Msg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B09601A91A19A19A0022D79C /* S1Msg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0DD28CB1A0EDBC7001C57E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD28CA1A0EDBC7001C57E7 /* main.m */; };
 		B0DD28CE1A0EDBC7001C57E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD28CD1A0EDBC7001C57E7 /* AppDelegate.m */; };
 		B0DD28D11A0EDBC7001C57E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DD28D01A0EDBC7001C57E7 /* ViewController.m */; };
@@ -35,14 +35,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B09601A61A1994870022D79C /* S1Msg.framework in CopyFiles */,
+				B09601AB1A19A4A40022D79C /* S1Msg.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B09601A31A1991DB0022D79C /* S1Msg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = S1Msg.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MultiTouch-fqeabnjuostndaheisepyzepzczq/Build/Products/Debug-iphoneos/S1Msg.framework"; sourceTree = "<group>"; };
+		B09601A91A19A19A0022D79C /* S1Msg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = S1Msg.framework; path = ../lib/S1Msg.framework; sourceTree = "<group>"; };
 		B0DD28C51A0EDBC7001C57E7 /* MultiTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DD28C91A0EDBC7001C57E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0DD28CA1A0EDBC7001C57E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B09601A41A1991DB0022D79C /* S1Msg.framework in Frameworks */,
+				B09601AA1A19A19A0022D79C /* S1Msg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,10 +80,10 @@
 		B0DD28BC1A0EDBC7001C57E7 = {
 			isa = PBXGroup;
 			children = (
-				B09601A31A1991DB0022D79C /* S1Msg.framework */,
 				B0DD28C71A0EDBC7001C57E7 /* MultiTouch */,
 				B0DD28E11A0EDBC7001C57E7 /* MultiTouchTests */,
 				B0DD28C61A0EDBC7001C57E7 /* Products */,
+				B09601A91A19A19A0022D79C /* S1Msg.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,6 +370,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MultiTouch-fqeabnjuostndaheisepyzepzczq/Build/Products/Debug-iphoneos",
+					"/Users/ivostoy/Documents/iOS-root/ios/lib",
 				);
 				INFOPLIST_FILE = MultiTouch/Info.plist;
 				INSTALL_PATH = "/Users/ivostoy/Documents/iOS-root/ios";
@@ -387,6 +388,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MultiTouch-fqeabnjuostndaheisepyzepzczq/Build/Products/Debug-iphoneos",
+					"/Users/ivostoy/Documents/iOS-root/ios/lib",
 				);
 				INFOPLIST_FILE = MultiTouch/Info.plist;
 				INSTALL_PATH = "/Users/ivostoy/Documents/iOS-root/ios";

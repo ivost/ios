@@ -11,8 +11,7 @@
 
 - (id) initWithEndpoint:(NSString *)endpoint;
 
-//- (void)someMethodWithFirstValue:(SomeType)info1 secondValue:(AnotherType)info2;
-- (void) sendEventWithId: (int) eventId data: (NSString *) messageData ;
+- (void) sendEventWithId: (int) eventId data: (NSData *) messageData ;
 
 
 @end
