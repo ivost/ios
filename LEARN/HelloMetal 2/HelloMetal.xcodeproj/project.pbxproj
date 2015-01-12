@@ -18,6 +18,7 @@
 		43167D7C19F93AA100929F8C /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43167D7B19F93AA100929F8C /* Vertex.swift */; };
 		43167D7E19F93B2B00929F8C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43167D7D19F93B2B00929F8C /* Node.swift */; };
 		4359566B19FA4F5F00881C62 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359566A19FA4F5F00881C62 /* Triangle.swift */; };
+		B066EEFA1A62FA35002F0741 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066EEF91A62FA35002F0741 /* Cube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		43167D7B19F93AA100929F8C /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		43167D7D19F93B2B00929F8C /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		4359566A19FA4F5F00881C62 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		B066EEF91A62FA35002F0741 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		35023C4219DDB96F006F3266 /* HelloMetal */ = {
 			isa = PBXGroup;
 			children = (
+				B066EEF91A62FA35002F0741 /* Cube.swift */,
 				43167D7819F9371D00929F8C /* Matrix4.h */,
 				43167D7919F9371D00929F8C /* Matrix4.m */,
 				43167D7B19F93AA100929F8C /* Vertex.swift */,
@@ -235,6 +238,7 @@
 				43167D7A19F9371D00929F8C /* Matrix4.m in Sources */,
 				35023C4819DDB970006F3266 /* ViewController.swift in Sources */,
 				43167D7E19F93B2B00929F8C /* Node.swift in Sources */,
+				B066EEFA1A62FA35002F0741 /* Cube.swift in Sources */,
 				43167D7C19F93AA100929F8C /* Vertex.swift in Sources */,
 				4359566B19FA4F5F00881C62 /* Triangle.swift in Sources */,
 				35023C4619DDB96F006F3266 /* AppDelegate.swift in Sources */,
