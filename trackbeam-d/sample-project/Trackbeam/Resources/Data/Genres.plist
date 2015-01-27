@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>70s</string>
+	<string>80s</string>
+	<string>90s</string>
+	<string>acid house</string>
+	<string>acid jazz</string>
+	<string>african</string>
+	<string>alternative</string>
+	<string>ambient</string>
+	<string>ambient house</string>
+	<string>ambient trance</string>
+	<string>blues</string>
+	<string>brasil</string>
+	<string>carribean</string>
+	<string>chillout</string>
+	<string>classical</string>
+	<string>dance</string>
+	<string>dark ambient</string>
+	<string>deep house</string>
+	<string>disco</string>
+	<string>drum and bass</string>
+	<string>dubstep</string>
+	<string>electronic</string>
+	<string>exotica</string>
+	<string>experimental</string>
+</array>
+</plist>
